@@ -1,4 +1,7 @@
 import { ContainerSummary } from "./styles";
+import incomeImg from '../../assets/income.svg';
+import outcomeImg from '../../assets/outcome.svg';
+import totalImg from '../../assets/total.svg';
 
 export function Summary(){
   return (
@@ -6,17 +9,26 @@ export function Summary(){
       <div>
         <header>
           <p>Entradas</p>
+          <img src={incomeImg} alt="Entradas" />
+
         </header>
+        <strong>R$1000,00</strong>
       </div>
       <div>
         <header>
-          <p></p>
+          <p>Entradas</p>
+          <img src={outcomeImg} alt="Saidas" />
+
         </header>
+        <strong>- R$500,00</strong>
       </div>
-      <div>
+      <div className="highlight-background">
         <header>
-          <p></p>
+          <p>total</p>
+          <img src={totalImg} alt="total" />
+
         </header>
+        <strong>R$500,00</strong>
       </div>
     </ContainerSummary>
     
